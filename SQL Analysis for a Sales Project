@@ -1,0 +1,6 @@
+SELECT MONTH_ID, SUM(sales) Revenue, COUNT(ORDERNUMBER) Frequency
+FROM [dbo].[sales_data_sample]
+WHERE YEAR_ID = 2003 --change year to see the rest
+GROUP BY MONTH_ID
+ORDER BY 2 desc
+
